@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "54702639191",
+    "firebase_url": "https://keen-aa00e.firebaseio.com",
+    "project_id": "keen-aa00e",
+    "storage_bucket": "keen-aa00e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54702639191:android:09fa1dd94a384cc830fb12",
+        "android_client_info": {
+          "package_name": "com.example.keen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54702639191-0032tdt2i3560pmqlf0rovl9nelhfia5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLVMbRlet_-dvwVI56_T8Me5iCPYPS_6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54702639191-0032tdt2i3560pmqlf0rovl9nelhfia5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54702639191:android:1ba0b563f16135bb30fb12",
+        "android_client_info": {
+          "package_name": "com.example.keendashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54702639191-0032tdt2i3560pmqlf0rovl9nelhfia5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLVMbRlet_-dvwVI56_T8Me5iCPYPS_6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54702639191-0032tdt2i3560pmqlf0rovl9nelhfia5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
