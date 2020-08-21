@@ -55,7 +55,6 @@ class HomeViewModel : ViewModel() , IPopularLoadCallback {
             }
         })
     }
-
     init {
         popularLoadCallbackListener = this
     }
