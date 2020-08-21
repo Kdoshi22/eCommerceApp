@@ -1,13 +1,15 @@
 package com.example.keen.model
 
-class PopularCategoryModel{
-    var item_id : String? = null
-    var name : String? = null
-    var image:String? = null
+import com.google.firebase.database.IgnoreExtraProperties
 
-    constructor(image : String? , item_id : String? , name : String?){
+@IgnoreExtraProperties
+data class PopularCategoryModel(
+    var image:String? = null,
+    var item_id : String? = null,
+    var name : String? = null)
+
+    /*constructor(image : String? , item_id : String? , name : String?){
         this.item_id = item_id
         this.name = name
         this.image = image
-    }
-}
+    }*/
