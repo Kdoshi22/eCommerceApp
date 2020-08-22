@@ -9,6 +9,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.asksira.loopingviewpager.LoopingViewPager
+import com.example.keen.Adapter.MyBestDealAdapter
 import com.example.keen.Adapter.MyPopularCategoriesAdapter
 import com.example.keen.R
 
@@ -17,6 +19,7 @@ class HomeFragment : Fragment() {
     private lateinit var homeViewModel: HomeViewModel
 
     private var recyclerView:RecyclerView? = null
+    private var viewPager:LoopingViewPager? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,12 +39,28 @@ class HomeFragment : Fragment() {
             recyclerView!!.adapter = adapter
         })
 
+        homeViewModel.bestDealList.observe(viewLifecycleOwner , Observer {
+            val adapter = MyBestDealAdapter(requireContext() , it , false)
+            viewPager!!.adapter = adapter
+        })
+
         return root
     }
 
     private fun initView(root:View){
+        viewPager = root.findViewById(R.id.viewpager) as LoopingViewPager
         recyclerView = root.findViewById(R.id.recycler_popular) as RecyclerView
         recyclerView!!.setHasFixedSize(true)
         recyclerView!!.layoutManager = LinearLayoutManager(context , RecyclerView.HORIZONTAL, false)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        viewPager!!.resumeAutoScroll()
+    }
+
+    override fun onPause() {
+        viewPager!!.pauseAutoScroll()
+        super.onPause()
     }
 }

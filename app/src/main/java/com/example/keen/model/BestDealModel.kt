@@ -1,13 +1,8 @@
 package com.example.keen.model
 
-class BestDealModel {
-    var item_id : String? = null
-    var name : String? = null
-    var image:String? = null
+import com.google.firebase.database.IgnoreExtraProperties
 
-    constructor(image : String? , item_id : String? , name : String?){
-        this.image = image
-        this.item_id = item_id
-        this.name = name
-    }
-}
+@IgnoreExtraProperties
+class BestDealModel(var item_id : String? = null,
+                    var name : String? = null,
+                    var image:String? = null)
