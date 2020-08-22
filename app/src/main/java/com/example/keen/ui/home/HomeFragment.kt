@@ -59,8 +59,8 @@ class HomeFragment : Fragment() {
         viewPager!!.resumeAutoScroll()
     }
 
-    override fun onPause() {
-        viewPager!!.pauseAutoScroll()
+    /*override fun onPause() {
         super.onPause()
-    }
+        viewPager!!.pauseAutoScroll()
+    }*/
 }
